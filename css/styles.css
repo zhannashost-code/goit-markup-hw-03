@@ -53,7 +53,9 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1158px;
+    max-width: 1128px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin: 0 auto;
 }
 
@@ -67,7 +69,6 @@ body {
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-    gap: 76px;
 }
 
 .header-address {
@@ -76,15 +77,18 @@ body {
 
 .address-list {
     display: flex;
+    align-items: center;
     gap: 40px;
 }
 
 .page-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 1px solid #e7e9fc;
 }
 
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+}
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -107,11 +111,12 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
+    display: block;
 }
 
 .nav-list {
     display: flex;
-    align-items: flex-start;
+    align-items: row;
     justify-content: flex-start;
     flex-direction: row;
     gap: 40px;
@@ -129,6 +134,10 @@ body {
     letter-spacing: 0.02em;
     color: #434455;
     font-style: normal;
+    padding: 24px 0;
+    display: block;
+    padding: 24px 0;
+
 }
 
 .address-link:hover,
@@ -166,6 +175,8 @@ body {
     border-radius: 4px;
     margin: 0 auto;
     display: block;
+    min-width: 169px;
+    height: 56px;
 
 }
 
@@ -181,6 +192,10 @@ body {
 .features-list {
     display: flex;
     gap: 24px;
+}
+
+.features-item {
+    width: calc((100% - 72px) / 4);
 }
 
 .features-text {
@@ -239,8 +254,18 @@ body {
     color: #434455;
 }
 
+.team-container {
+    padding: 32px 16px;
+    text-align: center;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
 .team-item {
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
 }
 
 
@@ -263,6 +288,7 @@ body {
 
 .portfolio-item {
     border-bottom: 1px solid #e7e9fc;
+    width: calc((100% - 48px) / 3);
 }
 
 .portfolio-name {
@@ -281,6 +307,12 @@ body {
     letter-spacing: 0.02em;
 }
 
+.portfolio-content {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
 .page-footer {
     background-color: #2E2F42;
     color: #F4F4FD;
@@ -294,6 +326,15 @@ body {
 }
 
 .footer-text {
-    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
     max-width: 264px;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
